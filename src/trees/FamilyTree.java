@@ -32,6 +32,7 @@ public class FamilyTree
         void addChild(TreeNode childNode)
         {
         	children.add(childNode);
+        	childNode.parent = this;
         }
         
         
@@ -205,6 +206,9 @@ public class FamilyTree
 	
 	public static void main(String[] args)
 	{
+		
+		
+		/*
 		try
 		{
 			FamilyTree tree = new FamilyTree();
@@ -220,5 +224,6 @@ public class FamilyTree
 		{
 			System.out.println("Input file trouble: " + x.getMessage());
 		}
+		*/
 	}
 }
